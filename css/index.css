@@ -1,0 +1,543 @@
+@charset "utf-8";
+html {
+	font:12px "宋体";
+}
+
+a {
+	color: #6c6c6c;
+}
+.site_top {
+	background-color: #F7F7F7;
+	height: 26px;	/*没有设置宽度时，继续父类的宽度*/
+	border-bottom: 1px solid #D8D8D8;
+}
+
+.top_page {
+	width: 970px;
+	height: 26px;	
+	margin: 0 auto;
+	/*background-color: pink;*/
+}
+
+.top_page_l {
+	color: #444444;
+	line-height: 26px; /*设置与容器行高一样，垂直居中*/
+}
+
+.top_page_r ul li{
+	float: left;
+	line-height: 26px;
+	padding-right: 10px;
+}
+
+.top_page_r ul li s {
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	background: url(../image/sprite.png);
+	vertical-align: middle;
+}
+
+.meibuy_logo {
+	width: 970px;
+	height: 98px;
+	/*background-color: red;*/
+	margin: 0 auto;
+}
+
+.logo_l {
+	width: 200px;
+	height: 55px;
+	/*background-color: pink;*/
+	margin: 24px 0 9px 18px;
+	background: url(../image/sprite.png) -12px 0 ;
+	text-indent: -1000em;
+}
+
+.logo_r {
+	width: 530	px;
+	height: 42px;
+	/*background-color: blue;*/
+	border: 1px solid #c9c9c9;
+	margin-top: 29px;
+}
+
+.logo_r_search {
+	width: 418px;
+	height: 28px;
+	border: 1px solid #C9C9C9;
+	color: #999999;
+}
+
+.logo_r_btn {
+	width: 99px;
+	height: 30px;
+	background-color: #2f70d0;
+	color: white;
+}
+
+.logo_r_content {
+	margin: 5px 5px 5px 4px;
+}
+
+.nav {
+	width: 970px;
+	height: 25px; 
+	margin: 0 auto;
+	border-bottom: 2px solid #0266a3;	
+}
+
+.nav ul li {
+	float: left;
+	padding: 0px 15px 0px 15px;
+	line-height: 25px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nav ul li a {
+	color: #306bae;
+}
+
+.nav ul li:hover {
+	background-color: #0266a3;
+}
+
+.nav ul li:hover a {
+	color: white;
+}
+
+.banner {
+	width: 970px;
+	height: 210px;
+	/*background-color: pink;*/
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.subNav {
+	width: 200px;
+	height: 210px;
+	/*background-color: silver;*/
+	margin-right: 11px;
+}
+
+.ad {
+	width: 520px;
+	height: 210px;
+	background-color: yellow;
+	overflow:hidden; /*超出div的部分隐藏*/
+	position:relative; 
+}
+
+.ad img {
+	display: none;
+}
+
+.message {
+	width: 230px;
+	height: 210px;
+	/*background-color: blue;*/
+}
+
+.subNav h2 {
+	padding-left: 20px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #0266a3;
+	color: white;
+}
+
+.subNav s {
+	display: inline-block;
+	width: 15px;
+	height: 13px;
+	background: url(../image/sprite.png) -217px -5px;
+	vertical-align: middle;
+}
+
+.subNav li {
+	/*height: 28px; */
+	font-size: 15px;
+	padding-top: 11px; 
+	margin-left: 9px;
+}
+
+.subNav li a {
+	padding-left: 15px;
+}
+
+.subNav ul {
+	background-color: #ebf0f6;
+	height: 180px;
+}
+
+.message_top {
+	height: 95px;
+	border: 1px solid #DDDDDD;
+	background-color: #f7faff;
+	margin-bottom: 21px;
+}
+
+.message_bottom {
+	height: 92px;
+	background-color: #f7f7f7;
+}
+
+.message_top s {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: url(../image/sprite.png) -233px -5px;
+	/*padding: 20px 10px 0px 10px;*/
+	margin: 20px 10px 0px 10px;
+}
+
+.message_top .fw {
+	font-weight: bold;
+	padding: 7px 0 0 18px;
+}
+
+.message_top .cheap {
+	margin-top: 25px;
+}
+
+.message_bottom .findMessage {
+	text-align: center;
+	font-size: 14px;
+	/*/*margin-top: 11px;外边距发生塌陷现象，设置无效，故用padding设置*/
+	padding-top: 11px;
+}
+
+.message_bottom .phone {
+	text-align: center;
+	color: #83bbdf;
+	margin-top: 10px;
+}
+
+.message_bottom .phone s {
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	background: url(../image/sprite.png) -218px -27px;
+	vertical-align: middle; /*image为行内元素，不设置的时候，图片默认与文字基线对齐*/
+
+}
+
+.message_bottom .btn {
+	width: 81px;
+	height: 23px;
+	background: url(../image/sprite.png) -276px -4px;
+	margin-top: 9px;
+	margin-left: 75px;
+}
+
+.material {
+	width: 950px;
+	height: 34px;
+	border-top: 2px solid #c3d7e4;
+	margin: 0 auto;
+	margin-top: 14px;
+	line-height: 34px;
+	background-color: #ecf1f7;
+	font-weight: bold;
+	color: #444444;
+	padding-left: 20px; 
+}
+
+.product {
+	width: 970px;
+	height: 345px;
+	/*background-color: pink;*/
+	margin: 0 auto;
+	margin-top: 12px;
+}
+
+.product .product_l {
+	width: 738px;
+	height: 345px;
+	/*background-color: blue;*/
+	border: 1px solid #D8D8D8;
+}
+
+.product .product_l_top {
+	height: 155px;
+	width: 712px;  /*此时候也要738-26*/
+	/*background-color: yellow;*/
+	padding: 17px 0 0 26px; 
+}
+
+.product .p_l_t_product1 {
+	width: 350px;
+	height: 146px;
+	/*background-color: blue;*/
+}
+
+.product .buy {
+	width: 99px;
+	height: 143px;
+	/*background-color: teal;*/
+}
+
+.product .buy .img {
+	height: 100px;
+	border: 1px solid #CACACA;
+	
+}
+.product .buy .img s {
+	display: inline-block;
+	width: 90px;
+	height: 62px;
+	background: url(../image/sprite.png) -5px -65px;
+	margin: 10px 4px 0 3px;
+}
+
+.product .buy .btn {
+	width: 99px;
+	height: 26px;
+	background-color: #0a84e3;
+	color: white;
+	margin-top: 15px;
+}
+
+.product .explain {
+	width: 251px;
+	height: 143px;
+	/*background-color: red;*/
+}
+
+.product .explain .goodWife {
+	font-size: 14px;
+	padding: 10px 0 0 10px;
+}
+
+.product .explain .auto {
+	color: #863e01;
+	/*margin: 13px 0 0 15px;*/ 
+	padding: 13px 0 0 15px;
+}
+
+.product .explain .money {
+	padding: 23px 0 0 11px;
+}
+
+.product .explain .money span {
+	color: #c50934;
+	font-weight: bold;
+}
+
+.product .explain .money s {
+	color: #555555;
+	text-decoration: line-through;
+}
+
+.product .explain .buyed {
+	font-size: 14px;
+	padding: 25px 0 0 11px;
+}
+
+.product .explain .buyed span {
+	color: #c50934;
+}
+
+
+.product .product_r {
+	width: 220px;
+	height: 345px;
+	/*background-color: silver;*/
+	border: 1px solid #e0e6f0;
+}
+
+.product_l_line {
+	margin: 0 4px 0 4px;
+	border-top: 2px solid #eeeeee;
+}
+
+.product_r h2 {
+	height: 28px;
+	line-height: 28px;
+	padding-left: 15px;
+	border-bottom: 1px solid #e0e6f0;
+}
+
+.product_r ul {
+	padding-top: 11px;
+}
+
+.product_r li {
+	line-height: 23px;
+	padding-left: 26px;
+}
+
+.product_r ul li s {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background: url(../image/sprite.png) -101px -65px;
+	vertical-align: middle;
+	padding: 0 0 0 10px;
+}
+
+.seat {
+	width: 970px;
+	height: 330px;
+	/*background-color: teal;*/
+	margin: 0 auto; 
+}
+
+.seat_l {
+	width: 722px;
+	height: 326px; 
+	/*background-color: red;*/
+}
+
+.seat_l .seat_l_top {
+	height: 23px;
+	border-bottom: 2px solid #00b0e7;
+}
+
+.seat_l_top .seat_l_top_l s {
+	display: inline-block;
+	width: 143px;
+	height: 23px;
+	background: url(../image/sprite.png) -101px -70px;
+}
+
+.seat_l_bottom {
+	height: 301px;
+	width: 722px;
+	/*background-color: green;*/
+	padding: 5px 0px 12px 5px;
+	border: 1px solid #cacaca;
+}
+.seat_l_bottom .s_l_b_product1 {
+	width: 162px;
+	height: 283px;
+	/*background-color: pink;*/
+	/*margin: 5px 0 0 5px;*/
+	padding-right: 18px;
+}
+
+.seat_l_bottom .s_l_b_product1 .img s {
+	display: inline-block;
+	width: 163px;
+	height: 170px;
+	background-color: green;
+	background: url(../image/sprite.png) -279px -29px;
+
+}
+
+.seat_l_bottom .s_l_b_product1 .detail {
+	text-align: center;
+}
+
+.seat_l_bottom .s_l_b_product1 .detail .brand {
+	line-height: 19px;
+}
+
+.seat_l_bottom .s_l_b_product1 .detail .age {
+	color: #999999;
+	margin-top: 4px;
+}
+
+.seat_l_bottom .s_l_b_product1 .detail .market {
+	color: #999999;
+	padding: 12px 0 13px 0;
+}
+
+.seat_l_bottom .s_l_b_product1 .detail .market span {
+	text-decoration: line-through;
+}
+
+.seat_l_bottom .s_l_b_product1 .detail .direct {
+	color: #999999;
+}
+
+.seat_l_bottom .s_l_b_product1 .detail .direct span {
+	color: #a10000;
+	font-weight: bold;
+}
+
+
+.seat_l_top_r {
+	margin: 5px 11px 5px 0;
+	color: #1a66b3;
+	font-weight: bold;
+}
+
+.seat_l_top .seat_l_top_r s {
+	display: inline-block;
+	width: 18px;
+	height: 8px;
+	background: url(../image/sprite.png) -101px -97px;
+}
+
+.seat_r {
+	width: 220px;
+	height: 326px;
+	/*background-color: blue;*/
+	margin-right: 8px;
+}
+
+.seat_r .binding {
+	width: 218px;
+	height: 128px;
+	/*background-color: red;*/
+	border: 1px solid #c8c8c8;	
+}
+
+.seat_r .binding s {
+	display: inline-block;
+	width: 218px;
+	height: 128px;
+	background: url(../image/sprite.png) -5px -130px;
+}
+
+.seat_r .new_pattern {
+	height: 176px;
+	/*background-color: pink;*/
+}
+
+.seat_r .new_pattern s {
+	display: inline-block;
+	height: 176px;
+	width: 220px;
+	background: url(../image/sprite.png) -5px -262px;
+}
+
+.link {
+	width: 970px;
+	height: 103px;
+	margin: 0 auto;
+	margin-top: 11px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 3px solid #0a7ec3;
+}
+
+.link_p1 {
+	margin-top: 30px;
+	color: #666666;
+}
+
+.link_p1 span {
+	color: #999999;
+}
+
+.link_p2 {
+	margin-top: 14px;
+	color: #666666;
+	margin-left: 61px;
+}
+
+.aboutMe {
+	height: 91px;
+	width: 970px;
+	margin: 0 auto;
+}
+
+.aboutMe p {
+	margin-top: 14px;
+	text-align: center;
+}
